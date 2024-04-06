@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.expense-tracker {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.income-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.income,
+.total-expense {
+  flex: 1 0 calc(50% - 10px);
+}
+
+.total-balance {
+  margin-bottom: 20px;
+}
+
+.expenses {
+  margin-top: 20px;
+}
+
+.expense-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.category,
+.amount {
+  flex: 0 0 calc(50% - 10px);
+}
+
+.category label,
+.amount label {
+  display: block;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.category select,
+.amount input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.date-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.date label {
+  display: block;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.date input[type="date"] {
+  width: calc(70% - 10px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#add-expense {
+  flex: 0 0 calc(30% - 10px);
+  width: 100%;
+  background-color: #631e54;
+  color: white;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#add-expense:hover {
+  background-color: #4e053e;
+}
+
+/* Expense list styles */
+.expense-list {
+  margin-top: 20px;
+}
+
+.expense-list h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.expense-item {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense-item .delete-btn {
+  background-color: #288ea0;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.expense-item .delete-btn:hover {
+  background-color: #4d8b90;
+}
